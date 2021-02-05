@@ -10,17 +10,16 @@
 
         <div class="content">
 
-            <form id="add-cafe-form"></form>
+            <form id="add-cafe-form">
+              <input type="text" name="name" placeholder="Cafe name">
+              <input type="text" name="city" placeholder="Cafe city">
+              <button>Add Cafe</button>
+            </form>
 
             <ul id="cafe-list"></ul>
 
         </div>
 
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-            https://firebase.google.com/docs/web/setup#available-libraries -->
 
         <script>
           // Your web app's Firebase configuration
@@ -37,7 +36,7 @@
 
           const db = firebase.firestore();
           db.settings({ timestampsInSnapshots: true });
-          
+
         </script>
 
         <script src="app.js"></script>
